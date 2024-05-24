@@ -1,0 +1,42 @@
+#footer{
+
+    margin-top: 100px;
+    .footer{
+        height: 400px;
+       
+
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            
+            ul{
+                font-size: 20px;
+                color: black opacity($color: #000000);
+                
+                li{
+                    margin-top: 10px;
+                }
+            }
+           
+        }
+    }
+    .p{
+        max-width: 200px;
+    }
+    .footerbottom{
+        p{
+            
+        }
+        margin-top: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icons{
+        display: flex;
+        gap: 2rem;
+    }
+    
+}
+
+

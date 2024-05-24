@@ -3,6 +3,18 @@ const app = express();
 const port = 3000;
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const cors = require('cors')
+
+const bodyParser = require('body-parser')
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
+
+app.use(cors())
+
 
 const DB_URL =
   "mongodb+srv://elmeddin:elis123@cluster0.0wayk1g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
